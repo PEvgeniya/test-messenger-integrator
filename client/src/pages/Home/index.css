@@ -1,0 +1,105 @@
+:root {
+    /*colors */
+    --dark-theme-background: #3e3e3e;
+    --dark-theme-secondary: #5e5e5e;
+    --dark-theme-text-main-color: #fff;
+
+    --light-theme-background: #fff;
+    --light-theme-text-main-color: #3e3e3e;
+
+    --accent-color: #c189ef;
+
+    --light-pink-color: #fff1f4;
+    --light-mint-color: #f2fffb;
+
+    --medium-pink-color: #edccd1;
+    --medium-mint-color: #c6eee0;
+
+    --intense-pink-color: #996069;
+    --intense-mint-color: #609b87;
+
+    --divider-color: #bdbdbd;
+    --warning-color: rgb(194, 42, 41);
+
+    /*geometry*/
+    --border-radius: 4em;
+}
+
+.container.home {
+    background-color: var(--light-theme-background);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    box-shadow: inset 0 0 20px var(--divider-color);
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.chat-list {
+    background-color: var(--light-pink-color);
+    height: 100vh;
+    width: 30%;
+    min-width: max-content;
+    float: left;
+    align-content: flex-start;
+    position: relative;
+    box-shadow: 0 0 20px var(--divider-color);
+}
+
+.chat-list-header {
+    background-color: var(--ligt-pink-color);
+    color: var(--intense-pink-color);
+    padding: 15px;
+    position: relative;
+    z-index: 10;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 59px;
+}
+
+.cat-chat-container {
+    float: right;
+    flex: 70%;
+    position: relative;
+    overflow: hidden;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.search {
+    color: var(--light-theme-text-main-color);
+    margin: 2px 0 2px 0;
+    padding: 15px;
+    position: relative;
+    z-index: 10;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10px;
+    border-radius: 15em;
+    border-top: solid;
+    border-color: rgba(0, 0, 0, 0.075);
+    border-width: thin;
+}
+
+.search:focus {
+    border: 1px var(--medium-pink-color);
+}
+
+@media screen and (max-width: 768px) {
+    .container home {
+        width: 768px; /* как сделать ширину чтоб енялась по ширине экрана? что-то с device width туплю и не помню */
+    }
+}

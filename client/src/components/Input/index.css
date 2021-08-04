@@ -1,0 +1,83 @@
+:root {
+    /*colors */
+    --dark-theme-background: #3e3e3e;
+    --dark-theme-secondary: #5e5e5e;
+    --dark-theme-text-main-color: #fff;
+
+    --light-theme-background: #fff;
+    --light-theme-text-main-color: #3e3e3e;
+
+    --accent-color: #c189ef;
+
+    --light-pink-color: #fff1f4;
+    --light-mint-color: #f2fffb;
+
+    --medium-pink-color: #edccd1;
+    --medium-mint-color: #c6eee0;
+
+    --intense-pink-color: #996069;
+    --intense-mint-color: #609b87;
+
+    --divider-color: #bdbdbd;
+    --warning-color: rgb(243, 70, 70);
+
+    /*geometry*/
+    --border-radius: 4em;
+}
+
+.cat-input-container {
+    position: relative;
+    align-self: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cat-input-container label {
+    color: var(--warning-color);
+    background-color: none;
+    font-size: 14px;
+    font-weight: bold;
+    align-self: left;
+    padding: 7px;
+}
+
+.cat-input-container input {
+    background-color: var(--light-mint-color);
+    color: var(--intense-mint-color);
+    font-weight: bold;
+    font-size: 12px;
+    align-self: left;
+    padding: 7px;
+    height: 3em;
+    text-align: left;
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: thin;
+}
+
+.cat-input-container input.form-control {
+    background-color: var(--light-mint-color);
+    color: var(--intense-mint-color);
+    position: relative;
+    display: flex;
+    border: thin;
+    text-align: left;
+    border-radius: var(--border-radius);
+    border-style: solid;
+    border-width: thin;
+}
+*/ .cat-input-container input.error {
+    background-color: var(--light-mint-color);
+    color: var(--warning-color);
+    position: relative;
+    display: grid;
+    border-color: var(--warning-color);
+    border-style: solid;
+    border-width: thin;
+}
+.cat-input-container input:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 1px var(--intense-mint-color) inset;
+}

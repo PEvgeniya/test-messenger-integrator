@@ -1,0 +1,120 @@
+:root {
+    /*colors */
+    --dark-theme-background: #3e3e3e;
+    --dark-theme-secondary: #5e5e5e;
+    --dark-theme-text-main-color: #fff;
+
+    --light-theme-background: #fff;
+    --light-theme-text-main-color: #3e3e3e;
+
+    --accent-color: #c189ef;
+
+    --light-pink-color: #fff1f4;
+    --light-mint-color: #f2fffb;
+
+    --medium-pink-color: #edccd1;
+    --medium-mint-color: #c6eee0;
+
+    --intense-pink-color: #996069;
+    --intense-mint-color: #609b87;
+
+    --divider-color: #bdbdbd;
+    --warning-color: rgb(194, 42, 41);
+
+    /*geometry*/
+    --border-radius: 4em;
+}
+
+body {
+    background-color: var(--light-pink-color);
+}
+
+.cat-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    animation: cat-spinner 2s infinite ease-in-out;
+}
+
+@keyframes cat-spinner {
+    0% {
+        transform: rotate(-45deg);
+    }
+    50% {
+        transform: rotate(-135deg);
+    }
+    100% {
+        transform: rotate(-225deg);
+    }
+}
+@keyframes span-1 {
+    0% {
+        transform: translate(0);
+    }
+    50% {
+        transform: translate(-50px, 0);
+        border-color: var(--intense-mint-color);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+@keyframes span-2 {
+    0% {
+        transform: translate(0);
+    }
+    50% {
+        transform: translate(50px, 0);
+        border-color: var(--intense-pink-color);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+@keyframes span-3 {
+    0% {
+        transform: translate(0);
+    }
+    50% {
+        transform: translate(0, -50px);
+        border-color: var(--accent-color);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+@keyframes span-4 {
+    0% {
+        transform: translate(0);
+    }
+    50% {
+        transform: translate(0, 50px);
+        border-color: var(--medium-mint-color);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+.cat-spinner span {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 4px solid var(--divider-color);
+}
+.cat-spinner span:nth-child(1) {
+    animation: span-1 2s ease-in-out infinite;
+}
+.cat-spinner span:nth-child(2) {
+    animation: span-2 2s ease-in-out infinite;
+}
+.cat-spinner span:nth-child(3) {
+    animation: span-3 2s ease-in-out infinite;
+}
+.cat-spinner span:nth-child(4) {
+    animation: span-4 2s ease-in-out infinite;
+}

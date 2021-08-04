@@ -1,0 +1,80 @@
+:root {
+    /*colors */
+    --dark-theme-background: #3e3e3e;
+    --dark-theme-secondary: #5e5e5e;
+    --dark-theme-text-main-color: #fff;
+
+    --light-theme-background: #fff;
+    --light-theme-text-main-color: #3e3e3e;
+
+    --accent-color: #c189ef;
+
+    --light-pink-color: #fff1f4;
+    --light-mint-color: #f2fffb;
+
+    --medium-pink-color: #edccd1;
+    --medium-mint-color: #c6eee0;
+
+    --intense-pink-color: #996069;
+    --intense-mint-color: #609b87;
+
+    --divider-color: #bdbdbd;
+    --warning-color: rgb(194, 42, 41);
+
+    /*geometry*/
+    --border-radius: 4em;
+}
+
+.profile-Menu {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+button.profile-Menu-button {
+    position: absolute;
+    z-index: 100;
+    top: 10px;
+    right: 10px;
+    margin: auto;
+    align-self: flex-end;
+    cursor: pointer;
+    display: block;
+    height: 35px;
+    width: 35px;
+    border: 1px;
+    border-radius: 50%;
+}
+
+button.profile-Menu-button img {
+    border: 1px;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.profileMenu-dropdown {
+    margin-top: 50px;
+    position: relative;
+    width: max-content;
+}
+
+.ProfileMenuBar-item {
+    color: var(--intense-pink-color);
+    font-weight: bold;
+    position: relative;
+    display: block;
+    align-self: flex-start;
+    text-align: left;
+    margin: 10px 25px 10px 15px;
+    width: inherit;
+    cursor: pointer;
+    border-bottom: outset;
+    border-color: var(--light-pink-color);
+    border-width: 1px;
+}
+
+.ProfileMenuBar-item:hover {
+    color: var(--intense-mint-color);
+    font-weight: bolder;
+}

@@ -1,0 +1,44 @@
+/* :root {
+    --background: #282a36;
+    --foreground: #f8f8f8;
+    --selection: #44475a;
+    --comment: #6272a4;
+    --red: #ff5555;
+    --orange: #ffb86c;
+    --yellow: #f1fa8c;
+    --green: #50fa7b;
+    --purple: #bd93f9;
+    --pink: #ff79c6;
+    --margin-main: 3px;
+    --padding-main: 3px;
+}
+
+* {
+    background-color: var(--background);
+    color: var(--foreground);
+    margin: var(--margin-main);
+    padding: var(--padding-main);
+}
+
+::selection {
+    background-color: var(--selection);
+}
+button:hover {
+    background-color: var(--selection);
+} */
+/*
+* Если ты в vscode наведёшь на 
+* input.error, то она тебе подскажет,
+* как должен выглядить html элемент, 
+* к которому будет применяться это правило
+* в данном случае это <input class="error">
+* Важно! что у tsx и jsx вместо class ты пишешь className
+*/
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Stick&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}

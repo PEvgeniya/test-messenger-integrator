@@ -1,0 +1,32 @@
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.message-container.incoming {
+    align-self: flex-end;
+    width: fit-content;
+    max-width: 300px;
+    background-color: rgb(244, 225, 69);
+    margin-top: 5px;
+    padding: 10px;
+    border-top-right-radius: 20em 20em;
+    border-top-left-radius: 15em;
+    border-bottom-left-radius: 15em;
+}
+.message-container.outgoing {
+    align-self: flex-start;
+    width: fit-content;
+    max-width: 300px;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-top-left-radius: 20em 20em;
+    border-top-right-radius: 15em;
+    border-bottom-right-radius: 15em;
+}
+.message-container {
+    padding: 10px;
+    border-radius: 3px;
+}

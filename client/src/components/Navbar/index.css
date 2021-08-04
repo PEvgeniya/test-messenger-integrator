@@ -1,0 +1,205 @@
+:root {
+    /*colors */
+    --dark-theme-background: #3e3e3e;
+    --dark-theme-secondary: #5e5e5e;
+    --dark-theme-text-main-color: #fff;
+
+    --light-theme-background: #fff;
+    --light-theme-text-main-color: #3e3e3e;
+
+    --accent-color: #c189ef;
+
+    --light-pink-color: #fff1f4;
+    --light-mint-color: #f2fffb;
+
+    --medium-pink-color: #edccd1;
+    --medium-mint-color: #c6eee0;
+
+    --intense-pink-color: #996069;
+    --intense-mint-color: #609b87;
+
+    --divider-color: #bdbdbd;
+    --warning-color: rgb(194, 42, 41);
+
+    /*geometry*/
+    --border-radius: 4em;
+}
+
+:cat-navbar {
+    --height: 0px;
+}
+
+div.cat-navbar {
+    min-height: var(--height);
+    height: max-content;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--medium-pink-color);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-logo {
+    width: min-content;
+}
+
+div.left-menu {
+    float: left;
+    height: var(--height);
+    display: flex;
+}
+
+div.right-menu {
+    float: right;
+    height: inherit;
+    display: flex;
+}
+
+.menuBar-nav {
+    margin: auto;
+}
+
+.menuBar-item {
+    color: var(--intense-pink-color);
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto;
+    padding: 0px 10px 0px 10px;
+}
+
+.menuBar-item:hover {
+    color: var(--light-pink-color);
+    font-weight: bolder;
+}
+
+/* .commandBar-item {
+    color: var(--intense-pink-color);
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    margin: auto;
+    padding: 0px 10px 0px 10px;
+}
+
+.commandBar-item:hover {
+    color: var(--light-pink-color);
+    font-weight: bolder;
+} */
+
+@media screen and (max-width: 768px) {
+    .cat-navbar div.left-hamb {
+        color: var(--intense-pink-color);
+        font-size: 20px;
+        font-weight: bold;
+        float: left;
+        display: block;
+        padding: 10px 10px 10px 15px;
+        cursor: pointer;
+    }
+
+    /* .cat-navbar div.right-open {
+        color: var(--intense-pink-color);
+        font-size: 20px;
+        float: right;
+        display: block;
+        padding: 15px 15px 15px 0;
+        cursor: pointer;
+    } */
+
+    .left-menu.responsive {
+        position: relative;
+        display: flex;
+        text-align: right;
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .left-hamb-open {
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bolder;
+        color: var(--light-mint-color);
+        padding: 10px 10px 10px 15px;
+        align-self: flex-start;
+        transform: rotate(90deg);
+        animation-duration: 1s;
+        animation-name: openedHamb;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+    }
+
+    @keyframes openedHamb {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(90deg);
+        }
+    }
+
+    .menuBar-nav.responsive {
+        position: relative;
+        float: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        width: 100%;
+    }
+
+    .menuBar-item.responsive {
+        margin: 0 0 5px 10px;
+        width: min-content;
+    }
+    /* 
+    .right-menu.responsive {
+        position: relative;
+        display: flex;
+        text-align: right;
+        flex-direction: column;
+    }
+
+    .right-menu.responsive .right-opened {
+        color: var(--light-mint-color);
+        font-size: 20px;
+        align-self: flex-end;
+        font-weight: bolder;
+        float: right;
+        display: block;
+        padding: 15px;
+        cursor: pointer;
+        transform: rotate(180deg);
+        animation-duration: 1s;
+        animation-name: rightOpened;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+    }
+
+    @keyframes rightOpened {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(180deg);
+        }
+    }
+
+    .right-menu.responsive div.commandBar-item {
+        color: var(--intense-pink-color);
+        position: relative;
+        display: block;
+        align-self: flex-start;
+        text-align: left;
+        margin: 0 0 10px 0;
+        width: min-content;
+    }
+    .right-menu.responsive .commandBar-item:hover {
+        color: var(--intense-mint-color);
+        font-weight: bolder;
+    } */
+}

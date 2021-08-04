@@ -1,0 +1,153 @@
+:root {
+    /*colors */
+    --dark-theme-background: #3e3e3e;
+    --dark-theme-secondary: #5e5e5e;
+    --dark-theme-text-main-color: #fff;
+
+    --light-theme-background: #fff;
+    --light-theme-text-main-color: #3e3e3e;
+
+    --accent-color: #c189ef;
+
+    --light-pink-color: #fff1f4;
+    --light-mint-color: #f2fffb;
+
+    --medium-pink-color: #edccd1;
+    --medium-mint-color: #c6eee0;
+
+    --intense-pink-color: #996069;
+    --intense-mint-color: #609b87;
+
+    --divider-color: #bdbdbd;
+    --warning-color: rgb(194, 42, 41);
+
+    /*geometry*/
+    --border-radius: 4em;
+}
+
+.cat-button {
+    align-self: center;
+}
+
+.cat-button button.primary {
+    background-color: var(--intense-mint-color);
+    color: var(--light-mint-color);
+    font-weight: bold;
+    margin-top: 25px;
+    text-align: center;
+    display: grid;
+    cursor: pointer;
+    position: relative;
+    margin: 0.5em 0;
+    padding: 0.8em 2.2em;
+    border: none;
+    border-radius: var(--border-radius);
+    align-self: center;
+}
+
+.cat-button button.accent {
+    background-color: var(--accent-color);
+    color: var(--light-mint-color);
+    font-weight: bold;
+    margin-top: 25px;
+    text-align: center;
+    display: grid;
+    cursor: pointer;
+    position: relative;
+    margin: 0.5em 0;
+    padding: 0.8em 2.2em;
+    border: none;
+    border-radius: var(--border-radius);
+    align-self: center;
+}
+
+.cat-button button.ghost {
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--light-theme-text-main-color);
+    margin-top: 25px;
+    text-align: center;
+    display: grid;
+    cursor: pointer;
+    position: relative;
+    margin: 0.5em 0;
+    padding: 0.8em 2.2em;
+    border: none;
+    border-radius: var(--border-radius);
+    align-self: center;
+}
+
+.cat-button button.secondary {
+    background-color: var(--intense-pink-color);
+    color: var(--light-pink-color);
+    font-weight: bold;
+    margin-top: 25px;
+    text-align: center;
+    display: grid;
+    cursor: pointer;
+    position: relative;
+    margin: 0.5em 0;
+    padding: 0.8em 2.2em;
+    border: none;
+    border-radius: var(--border-radius);
+    align-self: center;
+}
+
+.cat-button button.warning {
+    background-color: var(--warning-color);
+    color: white;
+    font-weight: bold;
+    margin-top: 25px;
+    text-align: center;
+    display: grid;
+    cursor: pointer;
+    position: relative;
+    margin: 0.5em 0;
+    padding: 0.8em 2.2em;
+    border: none;
+    border-radius: var(--border-radius);
+    align-self: center;
+}
+
+.cat-button button:disabled {
+    background-color: var(--divider-color);
+    color: var(--dark-theme-secondary);
+    display: block;
+    position: relative;
+    margin: 0.5em 0;
+    padding: 0.8em 2.2em;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: not-allowed;
+    align-self: center;
+}
+.cat-button button.primary:hover {
+    box-shadow: 0px 0px 6px 3px var(--light-mint-color);
+    transform: scale(1.03);
+}
+
+.cat-button button.primary:active {
+    box-shadow: 0px 0px 6px 3px var(--light-mint-color);
+    transform: scale(0.98);
+}
+
+.cat-button button.primary:focus {
+    outline: none;
+    box-shadow: 0px 0px 6px 3px var(--light-mint-color);
+}
+
+.cat-button button.primary.fetching {
+    animation-duration: 1s;
+    animation-name: fetchButton;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes fetchButton {
+    from {
+        transform: scale(0.9);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}

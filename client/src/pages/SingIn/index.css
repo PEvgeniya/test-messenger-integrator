@@ -1,0 +1,102 @@
+:root {
+    /*colors */
+    --dark-theme-background: #3e3e3e;
+    --dark-theme-secondary: #5e5e5e;
+    --dark-theme-text-main-color: #fff;
+
+    --light-theme-background: #fff;
+    --light-theme-text-main-color: #3e3e3e;
+
+    --accent-color: #c189ef;
+
+    --light-pink-color: #fff1f4;
+    --light-mint-color: #f2fffb;
+
+    --medium-pink-color: #edccd1;
+    --medium-mint-color: #c6eee0;
+
+    --intense-pink-color: #996069;
+    --intense-mint-color: #609b87;
+
+    --divider-color: #bdbdbd;
+    --warning-color: rgb(194, 42, 41);
+
+    /*geometry*/
+    --border-radius: 4em;
+}
+
+.signIn-container {
+    background-color: var(--medium-mint-color);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    justify-items: left;
+    height: 100vh;
+    width: 100vw;
+}
+
+form {
+    background-color: var(--light-pink-color);
+    position: fixed;
+    height: 100vh;
+    width: 400px;
+    min-width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: left;
+    box-shadow: 0 0 10px var(--divider-color);
+}
+
+.loginform {
+    position: relative;
+    width: 90%;
+    margin-bottom: 15px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.header {
+    color: var(--light-theme-text-main-color);
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    align-self: center;
+}
+
+.WrongData {
+    color: var(--warning-color);
+    font-weight: bolder;
+    padding: 5px;
+    position: absolute;
+    margin-top: 75vh;
+    align-self: center;
+    animation-name: WrongData;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes WrongData {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.signIn-container img {
+    position: relative;
+    align-self: center;
+    margin: 15px;
+    height: 150px;
+    width: 150px;
+    z-index: 100;
+}

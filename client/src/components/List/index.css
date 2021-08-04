@@ -1,0 +1,93 @@
+:root {
+    /*colors */
+    --dark-theme-background: #3e3e3e;
+    --dark-theme-secondary: #5e5e5e;
+    --dark-theme-text-main-color: #fff;
+
+    --light-theme-background: #fff;
+    --light-theme-text-main-color: #3e3e3e;
+
+    --accent-color: #c189ef;
+
+    --light-pink-color: #fff1f4;
+    --light-mint-color: #f2fffb;
+
+    --medium-pink-color: #edccd1;
+    --medium-mint-color: #c6eee0;
+
+    --intense-pink-color: #996069;
+    --intense-mint-color: #609b87;
+
+    --divider-color: #bdbdbd;
+    --warning-color: rgb(194, 42, 41);
+
+    /*geometry*/
+    --border-radius: 4em;
+}
+
+.cat-list-container {
+    position: relative;
+    float: left;
+    align-content: flex-start;
+    width: 100%;
+    border-top: solid;
+    border-color: rgba(0, 0, 0, 0.075);
+    border-width: thin;
+    box-sizing: border-box;
+}
+
+.cat-list-container .list-raw-container {
+    color: var(--light-theme-text-main-color);
+    font-weight: bold;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    min-width: 0;
+}
+
+.cat-list-container .list-raw-container:hover {
+    background-color: var(--medium-pink-color);
+    color: var(--intense-mint-color);
+    font-weight: bolder;
+    box-shadow: 0 0 5px var(--medium-mint-color);
+}
+
+.cat-list-container .list-raw-container.selected {
+    background-color: var(--medium-pink-color);
+    color: var(--intense-mint-color);
+    font-weight: bolder;
+    box-shadow: 0 0 5px var(--medium-mint-color);
+}
+
+.row-shimmer {
+    background-size: 1000px 100%;
+    border-radius: 15em;
+    height: 40px;
+    background: var(--light-primary-color);
+    margin: 15px 10px 15px 10px;
+}
+
+@keyframes fullView {
+    100% {
+        width: 100%;
+    }
+}
+
+.animate {
+    animation: shimmer 2s infinite linear;
+    background: linear-gradient(to right, #ffe8e8cc 4%, #ffe3e7cb 25%, var(--medium-pink-color) 50%);
+    background-size: 1000px 100%;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}

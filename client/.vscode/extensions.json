@@ -1,0 +1,16 @@
+{
+    "recommendations": [
+        "msjsdiag.debugger-for-chrome",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "formulahendry.auto-rename-tag",
+        "coenraads.bracket-pair-colorizer-2",
+        "streetsidesoftware.code-spell-checker",
+        "usernamehw.errorlens",
+        "eamodio.gitlens",
+        "christian-kohler.npm-intellisense",
+        "eg2.vscode-npm-script",
+        "streetsidesoftware.code-spell-checker-russian",
+        "visualstudioexptteam.vscodeintellicode"
+    ]
+}
